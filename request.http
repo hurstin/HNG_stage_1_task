@@ -1,0 +1,41 @@
+### Health check
+GET http://localhost:3000/health
+
+### Create a string - POST /strings
+POST http://localhost:3000/strings
+Content-Type: application/json
+
+{
+  "value": "hello"
+}
+
+### Create a palindrome string
+POST http://localhost:3000/strings
+Content-Type: application/json
+
+{
+  "value": "racecar"
+}
+
+### Create multi-word string
+POST http://localhost:3000/strings
+Content-Type: application/json
+
+{
+  "value": "This is a test string with multiple words"
+}
+
+### Get specific string
+GET http://localhost:3000/strings/helloe
+
+### Get all strings with filters
+GET http://localhost:3000/strings?is_palindrome=true
+
+### Get strings with multiple filters
+GET http://localhost:3000/strings?min_length=5&max_length=20&contains_character=e
+
+### Natural language filtering
+GET http://localhost:3000/strings/filter-by-natural-language?query=all%20single%20word%20palindromic%20strings
+
+### Delete a string
+DELETE http://localhost:3000/strings/hello%20world
