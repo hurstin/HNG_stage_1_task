@@ -13,7 +13,7 @@ app.use('/strings', stringsRouter);
 app.use('/strings/filter-by-natural-language', naturalLanguageRouter);
 
 // Health check endpoint
-app.get('/health', (req, res) => {
+app.get('/', (req, res) => {
   res.status(200).json({ status: 'OK', timestamp: new Date().toISOString() });
 });
 

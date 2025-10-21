@@ -1,5 +1,5 @@
 ### Health check
-GET http://localhost:3000/health
+GET http://localhost:3000/
 
 ### Create a string - POST /strings
 POST http://localhost:3000/strings

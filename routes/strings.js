@@ -43,6 +43,10 @@ router.post('/', validateStringInput, (req, res) => {
   }
 });
 
+router.get('/', (req, res) => {
+  res.status(200).json({ message: 'Strings route is working' });
+});
+
 // GET /strings/{string_value} - Get Specific String
 router.get('/:string_value', (req, res) => {
   try {
