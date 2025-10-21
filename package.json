@@ -1,0 +1,18 @@
+{
+  "name": "hng_stage_1_task",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Hurstin",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0"
+  }
+}
